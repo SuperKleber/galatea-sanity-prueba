@@ -1,8 +1,4 @@
-[[builds]]
+[build]
   base = "web/"
   command = "npm run build"
   publish = "public"
-[[builds]]
-  base = "studio/"
-  command = "npm run build"
-  publish = "dist"
