@@ -29,7 +29,7 @@ module.exports = {
  * with directions to enter the info manually or in the environment.
  */
 
-function requireConfig (path) {
+function requireConfig(path) {
   try {
     return require(path)
   } catch (e) {
@@ -38,8 +38,8 @@ function requireConfig (path) {
     )
     return {
       api: {
-        projectId: process.env.SANITY_PROJECT_ID || '',
-        dataset: process.env.SANITY_DATASET || ''
+        projectId: process.env.SANITY_PROJECT_ID,
+        dataset: process.env.SANITY_DATASET
       }
     }
   }
